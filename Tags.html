@@ -1,0 +1,123 @@
+ <!doctype html>
+<html lang="en">
+    <head>
+      <title>Apithon</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="./css/style.css">
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	  <style>
+		#tbl {
+		  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+		
+		#tbl td, #tbl th {
+		  border: 1px solid #ddd;
+		  padding: 8px;
+		}
+
+		#tbl tr:nth-child(even){background-color: #f2f2f2;}
+
+		#tbl tr:hover {background-color: #ddd;}
+
+		#tbl th {
+		  padding-top: 12px;
+		  padding-bottom: 12px;
+		  text-align: left;
+		  background-color: Teal;
+		  color: white;
+		}
+	  </style>
+    </head>
+    <body>
+		<h4>Existing Tag List:</h4>
+		<table id="tbl">
+			<tr>
+				<th>Tag Code</th>
+				<th>Short Description</th>
+				<th>Grouping Code</th>
+				<th>Active</th>
+				<th>Amend</th>
+			</tr>
+			<tr>
+				<td>#E</td>
+				<td>Entertainment</td>
+				<td>HOU</td>
+				<td>Enable / Disable</td>
+				<td>Edit | Delete</td>
+			</tr>
+			<tr>
+				<td>#T</td>
+				<td>Child Tuition Fee</td>
+				<td>EDU,HOU</td>
+				<td>Enable / Disable</td>
+				<td>Edit | Delete</td>
+			</tr>
+			<tr>
+				<td>#L</td>
+				<td>Loan EMI Payment</td>
+				<td>DEB</td>
+				<td>Enable / Disable</td>
+				<td>Edit | Delete</td>
+			</tr>
+			<tr>
+				<td>#G</td>
+				<td>Grocery</td>
+				<td>HOU</td>
+				<td>Enable / Disable</td>
+				<td>Edit | Delete</td>
+			</tr>
+			<tr>
+				<td>#V</td>
+				<td>Travel Related</td>
+				<td>TRA</td>
+				<td>Enable / Disable</td>
+				<td>Edit | Delete</td>
+			</tr>
+			<tr>
+				<td>#M</td>
+				<td>miscellaneous</td>
+				<td>HOU</td>
+				<td>Enable / Disable</td>
+				<td>Edit | Delete</td>
+			</tr>
+		</table>
+		<p></p>
+		<button type="button" style="background-color:Teal;color:white;border:none">Create New Tag</button>
+		
+		<p></p>
+		<p></p>
+		<p></p>
+		<h4>Tag Groupings:</h4>
+		<table id="tbl">
+			<tr>
+				<th>Groupping Code(s)</th>
+				<th> Description</th>
+				<th>Amend</th>
+			</tr>
+			<tr>
+				<td>HOU</td>
+				<td>Household Expenses</td>
+				<td>Edit | Delete</td>
+			</tr>
+			<tr>
+				<td>EDU</td>
+				<td>Educational Expenses</td>
+				<td>Edit | Delete</td>
+			</tr>
+			<tr>
+				<td>TRA</td>
+				<td>Travel Expense Grouping</td>
+				<td>Edit | Delete</td>
+			</tr>
+			<tr>
+				<td>DEB</td>
+				<td>Debt Payment (Loan EMI)</td>
+				<td>Edit | Delete</td>
+			</tr>
+		</table>
+		<p></p>
+		<button type="button" style="background-color:Teal;color:white;border:none">Create New Grouping</button>
+    </body>
+</html>

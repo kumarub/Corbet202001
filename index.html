@@ -1,0 +1,58 @@
+ <!doctype html>
+<html lang="en">
+    <head>
+      <title>Apithon</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body>
+		<div id="sidebar" class="w3-sidebar w3-bar-block" style="width:20%">
+			<h1><img src="/img/tag.png" style="width:60px;height:70px;">myTags</h1>
+			<a href="/Tags.html" target="iframe1" class="w3-bar-item w3-button" onclick="manageTagsPage()">Manage Tags</a>
+			<a href="/Accounts.html" target="iframe1" class="w3-bar-item w3-button" onclick="selectAccountsPage()">Select Account</a>
+			<a href="/Payments.html" target="iframe1" class="w3-bar-item w3-button" onclick="makePaymentPage()">Make Payment</a>
+			<a href="/Search.html" target="iframe1"  class="w3-bar-item w3-button" onclick="searchPage()">Search & Tag Transactions</a>
+			<a href="/Finances.html" target="iframe1" class="w3-bar-item w3-button" onclick="manageFinancesPage()">Manage Finances</a>
+			<a href="/Reports.html" target="iframe1" class="w3-bar-item w3-button" onclick="reportPage()">Reports</a>
+			<a href="/team.html" target="iframe1" class="w3-bar-item w3-button" onclick="developedByPage()">Developed By</a>			
+		</div>
+		<div style="margin-left:20%">		
+			<table style="width:100%;font-size:80%" > 
+				<tr> 
+					<td><p id="p1" style="text-align:left"></p></td> 
+					<td><p id="p2" style="text-align:right">Login</p></td> 
+				</tr> 
+			</table>
+			<div id="content">				
+				<iframe id="f1" name="iframe1" src="/blank.html" width="100%" height="1000" style="border:none;overflow:hidden" scrolling="no"></iframe>
+			</div> 		
+		</div>
+				
+		<script type="text/javascript">
+			function manageTagsPage() {
+				document.getElementById("p1").innerHTML = "Customer Id: 123456789012 | Selected Account: None";
+				//document.getElementById("f1").src = "/Tags.html"
+			}
+			function selectAccountsPage() {
+				document.getElementById("p1").innerHTML = "Customer Id: 123456789012 | Selected Account: None";
+				//document.getElementById("content").src = "/Accounts.html"
+			}
+			function makePaymentPage() {
+				document.getElementById("p1").innerHTML = "Customer Id: 123456789012";
+			}
+			function searchPage() {
+				document.getElementById("p1").innerHTML = "Customer Id: 123456789012 | Selected Account: 50000012345601";
+			}
+			function reportPage() {
+				document.getElementById("p1").innerHTML = "Customer Id: 123456789012 | Selected Account: 50000012345601";
+			}
+			function manageFinancesPage() {
+				document.getElementById("p1").innerHTML = "Customer Id: 123456789012 | Selected Account: 50000012345601";
+			}
+			function developedByPage() {
+				document.getElementById("p1").innerHTML = "";
+			}
+		</script>
+    </body>
+</html>

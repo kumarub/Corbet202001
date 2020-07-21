@@ -1,0 +1,41 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+h1{
+	padding: 10px;
+}
+#sidebar { 
+	float:left;  
+	background:Teal; 
+	width:20%; 
+	height:100%;
+	font-family:"Segoe UI";
+	color: White
+} 
+#content{ 
+	float:left;  
+	width:75%; 
+	margin: 10px;
+} 
+
+/* unvisited link */
+a:link {
+  color: White;
+}
+
+/* visited link */
+a:visited {
+  color: White;
+}
+
+/* mouse over link */
+a:hover {
+  color: Yellow;
+}
+
+/* selected link */
+a:active {
+  color: Green;
+}
+
